@@ -1,10 +1,8 @@
-# Serveur FiveM
+# Serveur FiveM - roleplay survie, apocalypse zombie.
 
 ![FiveM Banner](img/fivem_banner.gif)
 
 ![Wallpaper](img/wallpaper.jpg)
-
-## Un mode de jeux roleplay survie, zombie apocalypse.
 
 ## Frameworks
 
