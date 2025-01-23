@@ -1,0 +1,91 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# #                                                                                 # #
+# #      ____  _____    _    ____   __     __  ________  __  __ ____ ___ _____      # #
+# #     |  _ \| ____|  / \  |  _ \  \ \   / / |__  / _ \|  \/  | __ |_ _| ____|     # #
+# #     | | | |  _|   / _ \ | | | |  \ \ / /    / | | | | |\/| |  _ \| ||  _|       # #
+# #     | |_| | |___ / ___ \| |_| |   \ V /    / /| |_| | |  | | |_) | || |___      # #
+# #     |____/|_____/_/   \_|____/     \_/    /____\___/|_|  |_|____|___|_____|     # #
+# #     Github: https://github.com/buxdi      Discord: buxdi5                       # #
+# #                                                                                 # #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
+# Editable Settings
+# -----------------
+# You can edit the following:
+
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+# Set Tags
+sets tags "roleplay, survival, horror, zombie, pve, pvp"
+
+# Optional Editable Settings
+# --------------------------
+# You may edit the following:
+
+sv_licenseKey "VOTRE_CLE_LICENCE_FIVEM" # Remplacez par votre clé de licence FiveM
+sv_hostname "NOM_DE_VOTRE_SERVEUR"
+sets sv_projectName "NOM_DE_VOTRE_SERVEUR"
+sets sv_projectDesc "DESCRIPTION_DE_VOTRE_SERVEUR"
+sets locale "fr-FR"
+set mysql_connection_string "mysql://utilisateur:motdepasse@hote/nom_base?charset=utf8mb4" # Configurez vos identifiants MySQL
+load_server_icon img/esxLogo.png
+sv_maxclients 32
+sv_enforceGameBuild 3095
+exec @ox_inventory/config.cfg
+
+# System Administrators
+# ---------------------
+# Add system admins
+# Format: add_principal identifier.fivem:YOUR_FIVEM_ID group.admin
+
+add_principal group.admin group.user
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_ace resource.es_extended command.add_ace allow
+add_ace resource.es_extended command.add_principal allow
+add_ace resource.es_extended command.remove_principal allow
+add_ace resource.es_extended command.stop allow
+# add_principal identifier.fivem:VOTRE_ID_FIVEM group.admin # Exemple d'ajout d'admin
+
+# pma-voice Config
+# ----------------
+setr voice_enableRadioAnim 1
+setr voice_useNativeAudio true
+setr voice_useSendingRangeOnly true
+
+# ESX Language (edit to change the language of ESX)
+# -----------------------------------------------------------
+setr esx:locale "fr"
+
+# Default & Standalone Resources
+# ------------------------------
+ensure chat
+ensure chat-theme-gtao
+ensure spawnmanager
+ensure hardcap
+ensure oxmysql
+ensure ox_lib
+ensure ox_target
+ensure bob74_ipl
+
+# ESX Legacy Core
+# ----------
+ensure [core]
+
+# ESX Addons
+# ----------
+ensure [standalone]
+ensure [esx_addons]
+ensure [ox-core]
+ensure [dependency]
+ensure [zombies]
+ensure [hud]
+ensure custom_pausemenu
+
+# Additional Resource
+# -------------------
+ensure pma-voice

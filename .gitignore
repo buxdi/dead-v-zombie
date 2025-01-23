@@ -1,0 +1,27 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+cache/
+
+# Fichiers d'environnement
+.env
+.env.*
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Base de données
+*.sqlite
+*.db
+
+# Dossiers spécifiques FiveM
+crashes/
+citizen/
+
+# Configuration
+server.cfg
