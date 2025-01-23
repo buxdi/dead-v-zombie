@@ -2,9 +2,9 @@
 
 ![FiveM Banner](img/fivem_banner.gif)
 
-![Wallpaper](img/Zwallpaper)
+![Wallpaper](img/wallpaper.jpg)
 
-![Screenshot](img/Zscreenshot)
+![Screenshot](img/screenshot.png)
 
 Un serveur FiveM de survie zombie en français.
 
