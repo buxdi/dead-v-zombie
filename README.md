@@ -4,9 +4,7 @@
 
 ![Wallpaper](img/wallpaper.jpg)
 
-![Screenshot](img/screenshot.png)
-
-Un serveur FiveM de survie zombie en français.
+## Un serveur FiveM de survie zombie.
 
 ## Frameworks
 
