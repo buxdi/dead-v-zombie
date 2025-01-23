@@ -1,10 +1,10 @@
-# Dead V Zombie - Serveur FiveM
+# Serveur FiveM
 
 ![FiveM Banner](img/fivem_banner.gif)
 
 ![Wallpaper](img/wallpaper.jpg)
 
-## Un mode de jeux roleplay survie, apocalypse zombie.
+## Un mode de jeux roleplay survie, zombie apocalypse.
 
 ## Frameworks
 
