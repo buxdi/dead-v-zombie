@@ -55,11 +55,3 @@
 ## Support
 
 Pour obtenir de l'aide, contactez moi sur Discord ou ouvrez une issue sur GitHub.
-
-## Exemples d'utilisation
-
-Ajouter du stress :
-TriggerClientEvent(‘esx_status:add’, source, ‘stress’, 100000)
-
-Réduire le stress :
-TriggerClientEvent(‘esx_status:remove’, source, ‘stress’, 100000)
