@@ -4,7 +4,7 @@
 
 ![Wallpaper](img/wallpaper.jpg)
 
-## Un serveur FiveM de survie zombie.
+## Un mode de jeux roleplay survie, apocalypse zombie.
 
 ## Frameworks
 
