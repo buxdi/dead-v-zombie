@@ -11,7 +11,6 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-
 # Editable Settings
 # -----------------
 # You can edit the following:
@@ -20,18 +19,18 @@ endpoint_add_tcp "0.0.0.0:30120"
 endpoint_add_udp "0.0.0.0:30120"
 
 # Set Tags
-sets tags "roleplay, survival, horror, zombie, pve, pvp"
+sets tags "roleplay, survival, horror, zombies"
 
 # Optional Editable Settings
 # --------------------------
 # You may edit the following:
 
-sv_licenseKey "VOTRE_CLE_LICENCE_FIVEM" # Remplacez par votre clé de licence FiveM
-sv_hostname "NOM_DE_VOTRE_SERVEUR"
-sets sv_projectName "NOM_DE_VOTRE_SERVEUR"
-sets sv_projectDesc "DESCRIPTION_DE_VOTRE_SERVEUR"
+sv_licenseKey "<LICENCE_KEY>"
+sv_hostname "<SERVER_NAME>"
+sets sv_projectName "<SERVER_NAME>"
+sets sv_projectDesc "<SERVER_DESCRIPTION>"
 sets locale "fr-FR"
-set mysql_connection_string "mysql://utilisateur:motdepasse@hote/nom_base?charset=utf8mb4" # Configurez vos identifiants MySQL
+set mysql_connection_string "mysql://<USER>:<PASSWORD>@<HOST>/<DDB_NAME>?charset=utf8mb4"
 load_server_icon img/esxLogo.png
 sv_maxclients 32
 sv_enforceGameBuild 3095
@@ -39,8 +38,7 @@ exec @ox_inventory/config.cfg
 
 # System Administrators
 # ---------------------
-# Add system admins
-# Format: add_principal identifier.fivem:YOUR_FIVEM_ID group.admin
+# Add permissions
 
 add_principal group.admin group.user
 add_ace group.admin command allow # allow all commands
@@ -49,7 +47,7 @@ add_ace resource.es_extended command.add_ace allow
 add_ace resource.es_extended command.add_principal allow
 add_ace resource.es_extended command.remove_principal allow
 add_ace resource.es_extended command.stop allow
-# add_principal identifier.fivem:VOTRE_ID_FIVEM group.admin # Exemple d'ajout d'admin
+# add_principal identifier.fivem:<FIVEM_IDENTIFIER> group.admin
 
 # pma-voice Config
 # ----------------
@@ -58,7 +56,7 @@ setr voice_useNativeAudio true
 setr voice_useSendingRangeOnly true
 
 # ESX Language (edit to change the language of ESX)
-# -----------------------------------------------------------
+# -------------------------------------------------
 setr esx:locale "fr"
 
 # Default & Standalone Resources
